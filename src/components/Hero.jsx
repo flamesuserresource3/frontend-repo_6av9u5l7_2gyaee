@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import Spline from '@splinetool/react-spline'
+import { Bug, ShieldCheck, Database, Wrench } from 'lucide-react'
 
 function useReducedMotionOrLowPower() {
   const [prefersReduced, setPrefersReduced] = useState(false)
@@ -71,6 +72,20 @@ export default function Hero() {
           I plan, test, and keep systems running — one ticket at a time. Focused on functional test planning,
           troubleshooting, SQL validation, and quality at scale.
         </p>
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+          <div className="flex items-center gap-2 rounded-md border border-sky-400/30 bg-sky-500/10 px-3 py-2 text-sky-100">
+            <Bug className="h-4 w-4" /> Bug tracking
+          </div>
+          <div className="flex items-center gap-2 rounded-md border border-sky-400/30 bg-sky-500/10 px-3 py-2 text-sky-100">
+            <ShieldCheck className="h-4 w-4" /> QA safeguards
+          </div>
+          <div className="flex items-center gap-2 rounded-md border border-sky-400/30 bg-sky-500/10 px-3 py-2 text-sky-100">
+            <Database className="h-4 w-4" /> SQL checks
+          </div>
+          <div className="flex items-center gap-2 rounded-md border border-sky-400/30 bg-sky-500/10 px-3 py-2 text-sky-100">
+            <Wrench className="h-4 w-4" /> RCA & fixes
+          </div>
+        </div>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a href="#projects" className="inline-flex items-center justify-center rounded-full bg-sky-500/90 hover:bg-sky-400 text-white px-6 py-3 font-semibold shadow-[0_0_30px_rgba(56,189,248,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-400 focus-visible:ring-offset-slate-900 transition-colors">
             Explore My Work

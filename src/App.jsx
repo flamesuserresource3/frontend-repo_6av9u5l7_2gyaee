@@ -1,5 +1,4 @@
 import Hero from './components/Hero'
-import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
@@ -10,7 +9,6 @@ function Nav() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
         <a href="#home" className="text-sky-300 font-semibold tracking-wide">Varshith Poojary</a>
         <div className="hidden md:flex items-center gap-6 text-slate-200 text-sm">
-          <a className="hover:text-white focus-visible:ring-2 focus-visible:ring-sky-400 rounded px-1" href="#about">About</a>
           <a className="hover:text-white focus-visible:ring-2 focus-visible:ring-sky-400 rounded px-1" href="#skills">Skills</a>
           <a className="hover:text-white focus-visible:ring-2 focus-visible:ring-sky-400 rounded px-1" href="#projects">Projects</a>
           <a className="hover:text-white focus-visible:ring-2 focus-visible:ring-sky-400 rounded px-1" href="#contact">Contact</a>
@@ -41,7 +39,6 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <About />
         <Skills />
         <Projects />
         <Contact />
